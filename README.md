@@ -32,7 +32,7 @@ if($mc->isValid($number)) {
 ```
 第二种，通过获取运营商类型
 ```php
-if($mc->getProvider($number) == 0) {
+if($mc->getProvider($number) !== 0) {
     echo "有效手机号";
 } else {
     echo "无效手机号";
